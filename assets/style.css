@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-color: black;
+}
+
+
+header {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > img {
+    width: 220px;
+}
+
+
+header > nav > a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    margin: 0 10px;
+}
+
+header > nav > a:hover {
+    border-bottom: 1px solid orangered;
+}
+
+.hero, .about {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero > div > img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: none;
+}
+
+.hero > .left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hero > div > h2, .hero > div > p, .about > div > h2, .about > div > p{
+    color: white;
+    width: 450px;
+}
+
+.hero > div > h2 {
+    font-size: 1.8em;
+    font-weight: 900;
+}
+
+.hero > div > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background-color: orange;
+    padding: 20px;
+    border: none;
+    border-radius: 40px;
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.about > div > img {
+    width: 350px;
+    height: 350px;
+    border: none;
+}
+
+.presale {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+@media (max-width: 575.98px) {
+    header > nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero > div > h2, .hero > div > p{
+        color: white;
+        width: 350px;
+    }
+
+    .hero > div > img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: none;
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 991.98px) {}
+
+
+@media (max-width: 1199.98px) {}
+
+
