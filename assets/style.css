@@ -121,6 +121,22 @@ header > nav > a:hover {
         border-radius: 50%;
         border: none;
     }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about > div > h2, .hero > div > p{
+        color: white;
+        width: 350px;
+    }
+
+    .about > div > img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: none;
+    }
 }
 
 @media (max-width: 767.98px) {}
