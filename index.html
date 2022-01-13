@@ -8,11 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/particales.css">
+    <style>
+        .mySlides {display:none;}
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="assets/logo.png" alt="">
+        <img src="assets/logo.jpg" alt="">
         <nav>
             <a href="#">Home</a>
             <a href="#">NFTS</a>
@@ -102,7 +105,17 @@
         <img src="assets/token2.jpg" alt="">
     </section>
 
-
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="assets/p1.jpg" style="width:100%">
+        <img class="mySlides" src="assets/p2.jpg" style="width:100%">
+        <img class="mySlides" src="assets/p3.jpg" style="width:100%">
+        <img class="mySlides" src="assets/p4.jpg" style="width:100%">
+      
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+        
+     
     <section class="roadmap">
 
 
@@ -570,8 +583,18 @@
                 </div>
             </section>
         </div>
+    </section>
+    <section class="title-whitepaper">
+        <center>
+            <h2>Whitepaper</h2>
+            <p>Marketers create whitepapers to educate their audience about a particular issue, or explain and promote a particular methodology</p>
+        </center>
+    </section>
+    <section class="whitepaper">
+        <p>A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.
 
-
+            The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work.</p>
+        <a href="#">Download</a>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -583,6 +606,25 @@
     <script src="assets/particales.js"></script>
 
     <script src="assets/main.js"></script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
 </body>
 
 </html>
