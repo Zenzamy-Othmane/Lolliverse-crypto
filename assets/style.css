@@ -187,13 +187,13 @@ header > nav > a:hover {
 
 .nfts > div > div > img {
     border: none;
-    border-radius: 80%;
+    border-radius: 40px !important;
     width: 200px;
 }
 
 .token {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 80%;
     align-items: center;
     margin: 60px auto 60px auto;
