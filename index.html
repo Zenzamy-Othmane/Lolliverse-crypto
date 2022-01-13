@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/particales.css">
     <style>
@@ -92,11 +94,13 @@
     <section class="nfts" id="nfts">
         <h2>Our NFT's</h2>
         <div>
-            <img src="assets/nft1.jpg" alt="">
-            <img src="assets/nft2.jpg" alt="">
-            <img src="assets/nft3.jpg" alt="">
-            <img src="assets/nft4.jpg" alt="">
-            <img src="assets/nft5.jpg" alt="">
+            <div class="owl-carousel">
+                <img src="assets/nft1.jpg" alt="">
+                <img src="assets/nft2.jpg" alt="">
+                <img src="assets/nft3.jpg" alt="">
+                <img src="assets/nft4.jpg" alt="">
+                <img src="assets/nft5.jpg" alt="">
+            </div>
         </div>
     </section>
 
@@ -249,7 +253,7 @@
     </center>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <script src="assets/owlcarousel/dist/owl.carousel.min.js"></script>
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- stats.js lib -->
@@ -258,6 +262,10 @@
 
     <script src="assets/main.js"></script>
     <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel();
+        });
+
         var slideIndex = 1;
         showDivs(slideIndex);
         
