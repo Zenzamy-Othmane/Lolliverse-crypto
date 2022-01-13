@@ -91,13 +91,98 @@ header > nav > a:hover {
     border: none;
 }
 
+.about > .right > a {
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    border-radius: 40px;
+    color: coral;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-decoration: none;
+    background-color: white;
+    position: relative;
+    top: 40px;
+}
+
 .presale {
     width: 80%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 30px auto 60px auto;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.services > div {
+    width: 350px;
+    background-color: rgb(224, 67, 5);
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.services > div > img {
+    width: 100px;
+}
+
+.services > div > h2 {
+    font-size: 1.9em;
+    font-weight: 900;
+    color: white;
+}
+
+.services > div > p {
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+}
+
+.nfts {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 60px auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nfts > h2 {
+    font-size: 1.9em;
+    font-weight: 900;
+    color: white;
+}
+
+.nfts > div > img {
+    border: none;
+    border-radius: 80%;
+    width: 200px;
+}
+
+.token {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: 60px auto 60px auto;
+}
+
+.token > img {
+    width: 450px;
 }
 
 
@@ -124,9 +209,10 @@ header > nav > a:hover {
 
     .about {
         flex-direction: column;
+        margin-top: -200px;
     }
 
-    .about > div > h2, .hero > div > p{
+    .about > div > h2, .about > div > p{
         color: white;
         width: 350px;
     }
@@ -134,8 +220,25 @@ header > nav > a:hover {
     .about > div > img {
         width: 250px;
         height: 250px;
-        border-radius: 50%;
         border: none;
+        margin-bottom: -300px;
+    }
+    .presale {
+        margin-top: -350px;
+        margin-bottom: -250px;
+    }
+    .presale > img {
+        width: 450px;
+        
+    }
+
+    .services {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .services > div {
+        margin-bottom: 20px;
     }
 }
 
