@@ -39,7 +39,16 @@ header > nav > a:hover {
     border-bottom: 1px solid orangered;
 }
 
-.hero, .about {
+.hero {
+  background-image: url("BANNER3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.about {
     width: 80%;
     margin: 0 auto;
     display: flex;
