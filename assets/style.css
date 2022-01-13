@@ -589,12 +589,16 @@ footer {
   background-image: url("pied.PNG");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 450px;
   width: 100%;
 }
 
 
 @media (max-width: 575.98px) {
+    footer {
+      background-size: contain;
+    }
     header > nav {
         display: none;
     }
